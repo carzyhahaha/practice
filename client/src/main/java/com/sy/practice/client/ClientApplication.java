@@ -9,21 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @EnableEurekaClient
-@RestController
 public class ClientApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ClientApplication.class, args);
     }
-
-    @Value("${server.port")
-    String port;
-
-    @RequestMapping("/hi")
-    public String hi(String word) {
-        return "server by port:" + port + "say : " + word;
-    }
-
 
 }
 
