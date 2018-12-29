@@ -14,7 +14,7 @@ public class TestController {
     String port;
 
     @GetMapping("/hi")
-    public String hi(@RequestParam String word) {
+    public String hi(String word) {
         return "server by port:" + port + "say : " + word;
     }
 
