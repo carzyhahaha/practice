@@ -14,6 +14,6 @@ public class HelloController {
 
     @RequestMapping("hello")
     public String rbhello(String word) {
-        return helloService.hiService(word);
+        return "ribbon get : "+ helloService.hiService(word);
     }
 }

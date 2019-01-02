@@ -15,7 +15,7 @@ public class TestController {
 
     @GetMapping("/hi")
     public String hi(String word) {
-        return "server by port:" + port + "say : " + word;
+        return "server by port:" + port + " say : " + word;
     }
 
 

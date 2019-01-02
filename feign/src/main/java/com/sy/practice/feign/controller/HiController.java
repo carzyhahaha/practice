@@ -15,7 +15,7 @@ public class HiController {
     ServiceHi serviceHi;
 
     @RequestMapping("/hello")
-    public String hi(@RequestParam String word) {
-        return serviceHi.sayHiFromClientA(word);
+    public String hi(String word) {
+        return "fegin get :" + serviceHi.sayHiFromClientA(word);
     }
 }
