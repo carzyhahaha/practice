@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/carzyhahaha/config/
+          search-paths: dev
+          username:
+          password:
+      label: master
+
+
+server:
+  port: 8888
+
+
