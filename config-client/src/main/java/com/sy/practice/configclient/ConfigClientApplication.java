@@ -14,7 +14,7 @@ public class ConfigClientApplication {
         SpringApplication.run(ConfigClientApplication.class, args);
     }
 
-   // @Value("#{env}")
+    @Value("${foo}") // 只能读到这个client对应的name配置文件下的东西
     public String env;
 
     @RequestMapping("hi")
@@ -22,4 +22,6 @@ public class ConfigClientApplication {
         return env;
     }
 }
+
+// 访问 host:port/application-name/profile/branch-name
 
